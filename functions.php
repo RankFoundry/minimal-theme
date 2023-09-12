@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.2');
+    define('MINIMAL_THEME_VERSION', '1.0.4');
 }
 
 // Define theme directory path
@@ -31,6 +31,12 @@ if (!defined('MINIMAL_THEME_DIR_URI')) {
     define('MINIMAL_THEME_DIR_URI', trailingslashit( esc_url( get_stylesheet_directory_uri() )));
 }
 
+// Define current theme name
+if (!defined('CURRENT_THEME_NAME')) {
+    $current_theme_obj = wp_get_theme();
+    define('CURRENT_THEME_NAME', $current_theme_obj->get('Name'));
+}
+
 // Load the Composer autoloader.
 require_once MINIMAL_THEME_DIR . 'vendor/autoload.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
@@ -39,13 +45,15 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 /*--------------------------------------------------------------*/
 /*------------------ Theme Update Checker ----------------------*/
 /*--------------------------------------------------------------*/
-$minimalUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/rankfoundry/minimal-theme/',
-	MINIMAL_THEME_DIR . '/functions.php',
-	'minimal',
-	48
-);
-$minimalUpdateChecker->setBranch('master');
+if ( 'minimal' === CURRENT_THEME_NAME ) {
+	$minimalUpdateChecker = PucFactory::buildUpdateChecker(
+		'https://github.com/rankfoundry/minimal-theme/',
+		MINIMAL_THEME_DIR . '/functions.php',
+		'minimal',
+		48
+	);
+	$minimalUpdateChecker->setBranch('master');
+}
 
 
 /*---------------------------------------------------------------*/
