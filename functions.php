@@ -43,7 +43,7 @@ $minimalUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/rankfoundry/minimal-theme/',
 	MINIMAL_THEME_DIR . '/functions.php',
 	'minimal',
-	0
+	48
 );
 $minimalUpdateChecker->setBranch('master');
 
