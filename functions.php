@@ -18,17 +18,17 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.0');
+    define('MINIMAL_THEME_VERSION', '1.0.1');
 }
 
 // Define theme directory path
 if (!defined('MINIMAL_THEME_DIR')) {
-    define('MINIMAL_THEME_DIR', trailingslashit( get_template_directory() ));
+    define('MINIMAL_THEME_DIR', trailingslashit( get_stylesheet_directory() ));
 }
 
 // Define theme directory URI
 if (!defined('MINIMAL_THEME_DIR_URI')) {
-    define('MINIMAL_THEME_DIR_URI', trailingslashit( esc_url( get_template_directory_uri() )));
+    define('MINIMAL_THEME_DIR_URI', trailingslashit( esc_url( get_stylesheet_directory_uri() )));
 }
 
 // Load the Composer autoloader.
@@ -42,7 +42,8 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $minimalUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/rankfoundry/minimal-theme/',
 	MINIMAL_THEME_DIR . '/functions.php',
-	'minimal'
+	'minimal',
+	0
 );
 $minimalUpdateChecker->setBranch('master');
 
