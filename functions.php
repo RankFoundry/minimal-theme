@@ -66,5 +66,44 @@ function minimal_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'minimal_enqueue_styles' ); 
 
 
-
+// Function that will return our Wordpress menu
+function minimal_menu($atts, $content = null) {
+	extract(shortcode_atts(array(  
+		'menu'            =&gt; '', 
+		'container'       =&gt; 'div', 
+		'container_class' =&gt; '', 
+		'container_id'    =&gt; '', 
+		'menu_class'      =&gt; 'menu', 
+		'menu_id'         =&gt; '',
+		'echo'            =&gt; true,
+		'fallback_cb'     =&gt; 'wp_page_menu',
+		'before'          =&gt; '',
+		'after'           =&gt; '',
+		'link_before'     =&gt; '',
+		'link_after'      =&gt; '',
+		'depth'           =&gt; 0,
+		'walker'          =&gt; '',
+		'theme_location'  =&gt; ''), 
+		$atts));
+ 
+ 
+	return wp_nav_menu( array( 
+		'menu'            =&gt; $menu, 
+		'container'       =&gt; $container, 
+		'container_class' =&gt; $container_class, 
+		'container_id'    =&gt; $container_id, 
+		'menu_class'      =&gt; $menu_class, 
+		'menu_id'         =&gt; $menu_id,
+		'echo'            =&gt; false,
+		'fallback_cb'     =&gt; $fallback_cb,
+		'before'          =&gt; $before,
+		'after'           =&gt; $after,
+		'link_before'     =&gt; $link_before,
+		'link_after'      =&gt; $link_after,
+		'depth'           =&gt; $depth,
+		'walker'          =&gt; $walker,
+		'theme_location'  =&gt; $theme_location));
+}
+//Create the shortcode
+add_shortcode("minimalmenu", "minimal_menu");
 
