@@ -5,7 +5,7 @@ Template: kadence
 Author: Rank Foundry
 Author URI: https://rankfoundry.com/
 Description: A theme for minimal.
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: minimal
@@ -14,3 +14,34 @@ Text Domain: minimal
 /*---------------------------------------------------------------*/
 /*---------------------- Theme Styles ---------------------------*/
 /*---------------------------------------------------------------*/
+
+.wpseopress-faq {
+	margin-bottom: 2rem;
+}
+.single-content ol.breadcrumb {
+	padding-left: 0em;
+}
+
+form.wp-block-search {
+    display: flex;
+    justify-content: center;
+	  width: 75%;
+	  margin: 0 auto;
+}
+form.wp-block-search label {
+    display: none;
+}
+.sidebar-latest .grid-cols {
+	row-gap: 0;
+}
+.sidebar-latest .entry-header {
+	margin-bottom: 0.2rem;
+}
+.sidebar-latest .entry.loop-entry .entry-header .entry-title {
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: normal;
+	font-style: normal;
+	font-family: var(--global-body-font-family);
+	color: rgba(1,112,92,0.75);
+}

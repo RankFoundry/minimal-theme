@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.5');
+    define('MINIMAL_THEME_VERSION', '1.0.8');
 }
 
 // Define theme directory path
@@ -65,12 +65,3 @@ function minimal_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'minimal_enqueue_styles' ); 
 
-
-function minimal_menu_shortcode($atts=[], $content = null) {
-    $shortcode_atts = shortcode_atts([ 'name' => '', 'class' => '' ], $atts);
-    $name   = $shortcode_atts['name'];
-    $class  = $shortcode_atts['class'];
-    return wp_nav_menu( array( 'menu' => $name, 'menu_class' => $class, 'echo' => false ) );
-}
-
-add_shortcode('minimal-menu', 'minimal_menu_shortcode');
