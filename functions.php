@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.8');
+    define('MINIMAL_THEME_VERSION', '1.0.9');
 }
 
 // Define theme directory path
@@ -60,8 +60,27 @@ if ( 'minimal' === CURRENT_THEME_NAME ) {
 /*---------------------- Theme Styles ---------------------------*/
 /*---------------------------------------------------------------*/
 function minimal_enqueue_styles() {
-	wp_enqueue_style( 'minimal', get_stylesheet_directory_uri() . '/style.css', array(), 100 );
+	wp_enqueue_style( 'minimal', get_stylesheet_directory_uri() . '/style.css', array() );
 }
 
 add_action( 'wp_enqueue_scripts', 'minimal_enqueue_styles' ); 
 
+
+
+
+/*---------------------------------------------------------------*/
+/*--------------------- Mobile Trigger --------------------------*/
+/*---------------------------------------------------------------*/
+add_filter( 'kadence_svg_icon', 'change_menu_icon', 10, 4 );
+function change_menu_icon( $output, $icon, $icon_title, $base ) {
+    if ( 'menu' === $icon ) {
+        // Define the path to your SVG file. Adjust the path accordingly.
+        $svg_path = MINIMAL_THEME_DIR . 'assets/images/minimal-logo.svg';
+        
+        // Check if the file exists before reading.
+        if ( file_exists( $svg_path ) ) {
+            return file_get_contents( $svg_path );
+        }
+    }
+    return $output;
+}
