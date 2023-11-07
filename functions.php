@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.12');
+    define('MINIMAL_THEME_VERSION', '1.0.13');
 }
 
 // Define theme directory path
@@ -64,6 +64,12 @@ function minimal_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'minimal_enqueue_styles' ); 
+
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+
+function enqueue_parent_styles() {
+wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
 
 
 
