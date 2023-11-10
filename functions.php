@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.17');
+    define('MINIMAL_THEME_VERSION', '1.0.18');
 }
 
 // Define theme directory path
@@ -53,7 +53,6 @@ if ( 'minimal' === CURRENT_THEME_NAME ) {
 		48
 	);
 	$minimalUpdateChecker->setBranch('main');
-    $minimalUpdateChecker->setAuthentication('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');
 }
 
 /*--------------------------------------------------------------*/
