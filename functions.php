@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.0.15');
+    define('MINIMAL_THEME_VERSION', '1.0.16');
 }
 
 // Define theme directory path
@@ -52,7 +52,7 @@ if ( 'minimal' === CURRENT_THEME_NAME ) {
 		'minimal',
 		48
 	);
-	$minimalUpdateChecker->setBranch('master');
+	$minimalUpdateChecker->setBranch('main');
 }
 
 /*--------------------------------------------------------------*/
