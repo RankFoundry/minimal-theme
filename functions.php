@@ -72,6 +72,7 @@ add_filter('allow_major_auto_core_updates', '__return_true');
 // force auto updates even for version controlled code enviroments.
 add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1);
 
+
 /*---------------------------------------------------------------*/
 /*---------------------- Theme Styles ---------------------------*/
 /*---------------------------------------------------------------*/
@@ -86,8 +87,6 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 function enqueue_parent_styles() {
 wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
-
-
 
 
 /*---------------------------------------------------------------*/
