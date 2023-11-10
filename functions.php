@@ -53,7 +53,7 @@ if ( 'minimal' === CURRENT_THEME_NAME ) {
 		48
 	);
 	$minimalUpdateChecker->setBranch('main');
-    $themeUpdateChecker->setAuthentication('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');
+    $minimalUpdateChecker->setAuthentication('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');
 }
 
 /*--------------------------------------------------------------*/
