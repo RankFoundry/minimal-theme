@@ -615,7 +615,7 @@
       content: ""!important;
       width: 74px!important;
       height: 100%!important;
-      background: url('./assets/images/right-arrow.png') no-repeat!important;
+      background: url(./assets/images/right-arrow.png) no-repeat!important;
       right: 0px!important;
       background-size: 74px!important;
       transform: translateY(-50%)!important;
@@ -669,7 +669,7 @@
   }
   .testimonial-slider{
       background-color: var(--global-palette1, #3182CE);
-      background-image: url('./assets/images/frame-8.png');
+      background-image: url(./assets/images/frame-8.png);
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -690,7 +690,7 @@
       content: "";
       position: absolute;
       right: 0px;
-      background-image: url("./assets/images/arrow-drop-down-1.png");
+      background-image: url(./assets/images/arrow-drop-down-1.png);
           height: 100%;
       width: 100px;
       background-repeat: no-repeat;
