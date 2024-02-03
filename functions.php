@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.1.1');
+    define('MINIMAL_THEME_VERSION', '1.1.2');
 }
 
 // Define theme directory path
@@ -77,8 +77,8 @@ add_filter('automatic_updates_is_vcs_checkout', '__return_false', 1);
 /*---------------------- Theme Styles ---------------------------*/
 /*---------------------------------------------------------------*/
 function minimal_enqueue_styles() {
-	wp_enqueue_style( 'minimal', get_stylesheet_directory_uri() . '/style.css', array() );
-    wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/assets/css/custom.css' );
+	wp_enqueue_style( 'minimal', get_stylesheet_directory_uri() . '/style.css', array(), MINIMAL_THEME_VERSION );
+    wp_enqueue_style( 'custom', get_stylesheet_directory_uri() . '/assets/css/custom.css', array(), MINIMAL_THEME_VERSION );
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 
