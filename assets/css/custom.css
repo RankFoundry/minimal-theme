@@ -281,7 +281,6 @@
   position: relative;
   z-index: -1;
 }
-
 .arrow-icon-2 {
   position: absolute;
   left: -3%;
@@ -313,7 +312,6 @@
 }
 .author-description-wrapper {
   position: relative;
-  max-width: ;
 }
 .author-description-wrapper::before {
   position: absolute;
@@ -337,6 +335,7 @@
   right: -62px;
   bottom: 5px;
 }
+
 @media screen and (max-width: 1325px) {
   .quote-img-bottom {
     right: 170px !important;
@@ -688,7 +687,9 @@ button.wpseopress-accordion-button[aria-expanded="true"] h5::before {
 .faq-section .wpseopress-accordion-button {
   padding: 18px 20px 14px 54px !important;
   background: #263456 !important;
+  border-radius: 20px !important;
 }
+
 .testimonial-slider {
   background-color: var(--global-palette1);
   background-image: url(../images/frame-8.png);
@@ -1106,4 +1107,79 @@ footer .wp-block-social-links li {
 
 .ads-video-section .mejs-controls {
   display: none;
+}
+
+.section-story-last-video {
+  grid-column: 1 / -1 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .minimal-steps-section img {
+    max-width: 108px !important;
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+.section-medical-intake {
+  position: relative;
+}
+.section-medical-intake::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assets/images/steps-arrow-top.png);
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 92%;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 71%;
+}
+.section-provider-evaluation {
+  position: relative;
+}
+.section-provider-evaluation::before {
+  content: "";
+  position: absolute;
+  background-image: url(../../assets/images/steps-arrow-middle.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: -27%;
+  top: 82%;
+}
+.section-free-delivery{
+  position: relative;
+  z-index: -1;
+}
+.section-ongoing-support{
+  position: relative;
+}
+.section-ongoing-support::before{
+  content: "";
+  position: absolute;
+  background-image: url(../../assets/images/steps-arrow-bottom.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 0;
+  left: -30%;
+  top: -23%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-medical-intake::before {
+    content: unset;
+  }
+  .section-provider-evaluation::before {
+    content: unset;
+  }
+  .ongoing-support::before{
+    content: unset;
+  }
 }
