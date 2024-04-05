@@ -88,7 +88,7 @@ wp_enqueue_style('round-slider');
 
 add_action( 'wp_enqueue_scripts', 'minimal_enqueue_styles' ); 
 
-
+// enact-dev: jquery-3.2.1.js required for round-slider 
 wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-3.2.1.js', null, null, true );
 wp_enqueue_script('jQuery');
 

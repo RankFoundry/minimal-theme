@@ -1,8 +1,8 @@
 $(document).ready(function () {
     // Calculate the radius based on the screen width or other criteria
     var screenWidth = $(window).width();
-    var radius = screenWidth < 1200 ? 150 : 260; 
-		var width = screenWidth < 1200 ? 32 : 48;
+    var radius = screenWidth < 1536 ? 150 : 260; 
+		var width = screenWidth < 1536 ? 32 : 48;
 
     $("#slider").roundSlider({
     radius: radius,
