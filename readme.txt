@@ -16,7 +16,7 @@ A cutom WordPress theme for minimal
 == Changelog ==
 
 = 1.1.4 = 
-* Add custom CC for the semaglutide PPC Page
+* Push changes for the semaglutide PPC Page
 
 = 1.1.3 =
 * Add custom CSS for PPC pages
