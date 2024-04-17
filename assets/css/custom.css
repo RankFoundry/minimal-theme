@@ -1225,5 +1225,9 @@ footer .wp-block-social-links li {
     content: unset;
   }
 }
+#slider-heading {
 
+line-height: 1.2 !important;
+
+}
 

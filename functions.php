@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 /*--------------------------------------------------------------*/
 // Define theme version
 if (!defined('MINIMAL_THEME_VERSION')) {
-    define('MINIMAL_THEME_VERSION', '1.1.3');
+    define('MINIMAL_THEME_VERSION', '1.1.4');
 }
 
 // Define theme directory path

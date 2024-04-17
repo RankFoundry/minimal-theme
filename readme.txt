@@ -4,7 +4,7 @@ Author URI: https://rankfoundry.com/
 Tags: Custom Theme, Minimal, RankFoundry
 Requires at least: 6.0
 Tested up to: 6.3.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 A cutom WordPress theme for minimal
 
 == Changelog ==
+
+= 1.1.4 = 
+* Add custom CC for the semaglutide PPC Page
 
 = 1.1.3 =
 * Add custom CSS for PPC pages
