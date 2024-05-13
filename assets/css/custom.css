@@ -1231,8 +1231,264 @@ footer .wp-block-social-links li {
 
 /* new homepage */
 
+.homepage > .wp-block-kadence-column {
+  max-width: unset !important;
+}
+.homepage {
+  background-color: #fffef2 !important;
+}
 .section-header .section-header-menu > .kt-inside-inner-col {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.section-guidance-slide .kb-advanced-slider .splide__arrow {
+  background: #13363d;
+  opacity: 1;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  top: 80%;
+  opacity: 1;
+}
+.section-guidance-slide .kb-slider-size-fixed .kb-advanced-slide-inner-wrap {
+  min-height: unset;
+}
+.section-guidance-slide .kb-advanced-slider .slick-next {
+  left: 136px;
+}
+.section-guidance-slide .kb-advanced-slider .slick-prev::before {
+  content: "";
+  background-image: url(../images/slider-left-arrow.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background-repeat: no-repeat;
+}
+.section-guidance-slide .kb-advanced-slider .slick-next::after {
+  content: "";
+  background-image: url(../images/slider-right-arrow.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background-repeat: no-repeat;
+}
+.section-guidance-slide .kb-advanced-slider .slick-prev svg {
+  display: none;
+}
+.section-guidance-slide .kb-advanced-slider .slick-next svg {
+  display: none;
+}
+.section-guidance-slide .kb-advanced-slider .slick-prev {
+  left: 66px;
+}
+.section-guidance-slide .kb-advanced-slider .splide__arrow:hover {
+  background: #e6b184;
+}
+.section-guidance-slide .kb-advanced-slider .splide__arrow:focus {
+  background: #e6b184;
+}
+.section-read-reviews .kb-advanced-slider .splide__arrow {
+  background: #13363d;
+  opacity: 1;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  top: 94%;
+  opacity: 1;
+}
+.section-read-reviews .kb-slider-size-fixed .kb-advanced-slide-inner-wrap {
+  min-height: unset;
+}
+.section-read-reviews .kb-advanced-slider .slick-next {
+  left: 108px;
+}
+.section-read-reviews .kb-advanced-slider .slick-prev {
+  left: 42px;
+}
+.section-read-reviews .kb-advanced-slider .slick-prev::before {
+  content: "";
+  background-image: url(../images/slider-left-arrow.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background-repeat: no-repeat;
+}
+.section-read-reviews .kb-advanced-slider .slick-next::after {
+  content: "";
+  background-image: url(../images/slider-right-arrow.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background-repeat: no-repeat;
+}
+.section-read-reviews .kb-advanced-slider .slick-prev svg {
+  display: none;
+}
+.section-read-reviews .kb-advanced-slider .slick-next svg {
+  display: none;
+}
+.section-read-reviews .kb-advanced-slider .splide__arrow:hover {
+  background: #e6b184;
+}
+.section-read-reviews .kb-advanced-slider .splide__arrow:focus {
+  background: #e6b184;
+}
+.section-steps-major-support .kt-inside-inner-col > .wp-block-kadence-column {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-steps-major-support .section-content {
+    order: 1;
+  }
+  .section-steps-major-support .section-image {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-guidance-slide .kb-advanced-slider .slick-prev {
+    left: 34%;
+  }
+  .section-guidance-slide .kb-advanced-slider .slick-next {
+    left: 54%;
+  }
+  .section-guidance-slide .kb-advanced-slider .splide__arrow {
+    top: 105%;
+  }
+  .section-read-reviews .kb-advanced-slider .splide__arrow {
+    top: 108%;
+  }
+  .section-read-reviews .kb-advanced-slider .slick-prev {
+    left: 34%;
+  }
+  .section-read-reviews .kb-advanced-slider .slick-next {
+    left: 54%;
+  }
+  .section-resources-info
+    .wp-block-kadence-infobox
+    .kadence-info-box-image-intrisic {
+    width: 52px !important;
+  }
+  .section-resources-info
+    .wp-block-kadence-infobox:nth-child(2)
+    .kadence-info-box-image-intrisic {
+    width: 45px !important;
+  }
+  .section-resources-info
+    .wp-block-kadence-infobox:nth-child(3)
+    .kadence-info-box-image-intrisic {
+    width: 52px !important;
+  }
+  .section-resources-info .wp-block-kadence-infobox:nth-child(2) {
+    max-width: 300px;
+    width: 100%;
+  }
+  .section-resources-info
+    .wp-block-kadence-infobox
+    .kadence-info-box-image-intrisic {
+    border-radius: 30px;
+  }
+}
+
+/* footer section */
+.section-footer {
+  background: #fffef2;
+  padding-top: 120px;
+}
+.section-footer .kt-has-4-columns {
+  grid-template-columns: 180px 270px 174px 308px !important;
+  justify-content: space-between;
+}
+.section-footer .wp-block-kadence-advancedheading:hover {
+  color: #e6b184 !important;
+  cursor: pointer;
+}
+
+.section-subscribe .kb-form {
+  display: grid;
+  grid-template-columns: 340px 134px;
+  gap: 13px;
+  align-items: center;
+}
+
+.section-subscribe .kb-form .kadence-blocks-form-field {
+  margin-bottom: 0px !important;
+  padding: 0px;
+}
+.section-footer .socials-link img:hover{
+  opacity: 0.6;
+}
+.section-subscribe .kb-form input {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+}
+@media screen and (max-width: 1024px) {
+  .section-footer .kt-has-4-columns {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-footer .kt-has-4-columns {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .section-footer .kt-has-4-columns > .wp-block-kadence-column:nth-child(1) {
+    grid-column: span 2;
+  }
+  .section-footer .kt-has-4-columns > .wp-block-kadence-column:nth-child(4) {
+    grid-column: span 2;
+  }
+  .section-subscribe .wp-block-kadence-form{
+    margin-bottom: 0px;
+  }
+  .section-subscribe .kb-form{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+  .section-subscribe{
+    max-width: 340px;
+    margin: 0px auto;
+    width: 100%;
+  }
+  .section-footer{
+    padding-top: 98px;
+  }
+  .section-scrollify > .kt-inside-inner-col{
+    min-height: auto!important;
+  }
+  .section-about-minimal > .kt-inside-inner-col{
+    min-height: auto!important;
+  }
+  .section-banner > .kt-inside-inner-col{
+    background-image:  url(../images/hp-banner-mobile-image.png)!important;
+    background-position: 99% 50%;
+  }
+  .menu-toggle-style-default svg {
+    background: #e6b184!important;
+    height: 30px!important;
+    width: 30px!important;
+  }
+  .guidance-image img{
+    margin: -22px -28px -69px 0px;
+  }
+  .section-banner .break{
+    display: block;
+  }
+  .section-banner .break br{
+    display: none;
+  }
 }

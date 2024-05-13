@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    // Calculate the radius based on the screen width or other criteria
-    var screenWidth = $(window).width();
-    var radius = screenWidth < 1536 ? 150 : 260; 
-		var width = screenWidth < 1536 ? 32 : 48;
+  // Calculate the radius based on the screen width or other criteria
+  var screenWidth = $(window).width();
+  var radius = screenWidth < 1536 ? 150 : 260;
+  var width = screenWidth < 1536 ? 32 : 48;
 
-    $("#slider").roundSlider({
+  $("#slider").roundSlider({
     radius: radius,
     circleShape: "half-top",
     sliderType: "default",
@@ -14,8 +14,41 @@ $(document).ready(function () {
     drag: "traceEvent",
     create: "traceEvent"
   });
+
+  // Check if the device is mobile
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+  // If it's not a mobile device, initialize scrollify
+  if (!isMobileDevice()) {
+    jQuery.scrollify({
+      section: ".section-scrollify",
+    });
+
+    jQuery(function () {
+      jQuery.scrollify({
+        section: ".section-scrollify",
+        sectionName: false,
+        interstitialSection: ".section-footer",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        offset: 0,
+        scrollbars: true,
+        standardScrollElements: "",
+        setHeights: true,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll: true,
+        before: function () { },
+        after: function () { },
+        afterResize: function () { },
+        afterRender: function () { },
+      });
+    });
+  };
 });
- 
+
 
   function traceEvent(e) {
     let input = Number(document.querySelector("#slider").innerText);
@@ -30,4 +63,34 @@ $(document).ready(function () {
   function calculateOutput2(input) {
     return Number(input / 5).toFixed(0);
   }
+
+
+// scrollify
+
+// jQuery(function () {
+//   jQuery.scrollify({
+//     section: ".section-scrollify",
+//   });
+// });
+
+// jQuery(function () {
+//   jQuery.scrollify({
+//     section: ".section-scrollify",
+//     sectionName: false,
+//     interstitialSection: ".section-footer",
+//     easing: "easeOutExpo",
+//     scrollSpeed: 1100,
+//     offset: 0,
+//     scrollbars: true,
+//     standardScrollElements: "",
+//     setHeights: true,
+//     overflowScroll: true,
+//     updateHash: true,
+//     touchScroll: true,
+//     before: function () { },
+//     after: function () { },
+//     afterResize: function () { },
+//     afterRender: function () { },
+//   });
+// });
 
