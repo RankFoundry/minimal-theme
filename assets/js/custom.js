@@ -1,8 +1,8 @@
 $(document).ready(function () {
   // Calculate the radius based on the screen width or other criteria
   var screenWidth = $(window).width();
-  var radius = screenWidth < 1536 ? 150 : 260;
-  var width = screenWidth < 1536 ? 32 : 48;
+  var radius = screenWidth < 1537 ? 150 : 220;
+  var width = screenWidth < 1537 ? 32 : 36;
 
   $("#slider").roundSlider({
     radius: radius,
@@ -30,7 +30,7 @@ $(document).ready(function () {
       jQuery.scrollify({
         section: ".section-scrollify",
         sectionName: false,
-        interstitialSection: ".section-footer",
+        interstitialSection: "",
         easing: "easeOutExpo",
         scrollSpeed: 1100,
         offset: 0,
@@ -65,32 +65,4 @@ $(document).ready(function () {
   }
 
 
-// scrollify
-
-// jQuery(function () {
-//   jQuery.scrollify({
-//     section: ".section-scrollify",
-//   });
-// });
-
-// jQuery(function () {
-//   jQuery.scrollify({
-//     section: ".section-scrollify",
-//     sectionName: false,
-//     interstitialSection: ".section-footer",
-//     easing: "easeOutExpo",
-//     scrollSpeed: 1100,
-//     offset: 0,
-//     scrollbars: true,
-//     standardScrollElements: "",
-//     setHeights: true,
-//     overflowScroll: true,
-//     updateHash: true,
-//     touchScroll: true,
-//     before: function () { },
-//     after: function () { },
-//     afterResize: function () { },
-//     afterRender: function () { },
-//   });
-// });
 
