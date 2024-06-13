@@ -1896,6 +1896,12 @@ overflow: hidden;
   border-radius: 30px;
   overflow: hidden;
 }
+.product-smart-slider .n2-ss-slider-2{
+  border-radius: 30px !important;
+}
+.product-smart-slider .n2-thumbnail-dot img{
+  object-fit: contain !important;
+}
 .medication .product-info-right {
   max-width: max-content;
 }
@@ -1904,3 +1910,15 @@ overflow: hidden;
     order: 2;
   }
 }
+.citations-links a{
+  color: var(--wp--preset--color--theme-palette-5) !important;
+}
+.citations-links a:hover{
+  color: var(--wp--preset--color--theme-palette-3) !important;
+}
+.citations-links ol{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  list-style: none;
+}
+
