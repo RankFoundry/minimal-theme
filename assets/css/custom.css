@@ -1,4 +1,4 @@
-.overflow-hidden{
+.overflow-hidden {
   overflow: hidden;
 }
 /* Pagination style */
@@ -927,50 +927,11 @@ footer .wp-block-social-links li {
   position: relative;
 }
 .calculator-slider .circle-range {
-  position: absolute;
   right: 0px;
   left: 0px;
   top: 14%;
   z-index: 999;
-  width: 40%;
-}
-
-@media screen and (max-width: 1199px) {
-  .calculator-slider .circle-range {
-    width: 56%;
-  }
-  .range-result {
-    top: 92px;
-    left: 50%;
-    font-size: 40px;
-  }
-  .circle-range h3 {
-    font-size: 20px;
-  }
-  .result p {
-    font-size: 18px;
-  }
-  .weight {
-    font-size: 54px;
-  }
-  .range-result {
-    top: 24px;
-  }
-  .circle-range h3 {
-    bottom: 75px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .calculator-slider .circle-range {
-    width: 56%;
-  }
-  .range-result {
-    top: 24px;
-  }
-  .circle-range h3 {
-    bottom: 75px;
-  }
+  text-align: center;
 }
 
 .ads-video-section .mejs-controls {
@@ -1523,9 +1484,12 @@ article .wp-post-image {
 .circle-range {
   position: relative;
   max-width: 340px;
-  height: 170px;
-  border-radius: 170px 170px 0 0;
-  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  margin-top: -108px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   user-select: none;
 }
@@ -1562,21 +1526,29 @@ article .wp-post-image {
   font-size: 48px;
   font-weight: 600;
   color: #000;
-  position: absolute;
   top: 80px;
   font-family: lato;
-  left: 50%;
-  transform: translateX(-50%);
+
 }
 .circle-range h3 {
   font-size: 36px;
   font-weight: 500;
   color: #000;
-  position: absolute;
-  left: 50%;
   font-family: lato;
-  bottom: 10px;
-  transform: translateX(-50%);
+  margin-top: 10px !important;
+}
+@media (max-width: 1536px) {
+  .circle-range{
+    margin-top: -80px;
+    padding-bottom: 20px;
+  }
+  .range-result{
+    font-size: 32px;
+  }
+  .circle-range h3 {
+    font-size: 24px;
+  }
+ 
 }
 .result {
   border-radius: 24px;
@@ -1628,8 +1600,8 @@ article .wp-post-image {
 .section-fitness-experts {
   position: relative;
 }
-.section-wild-card .kt-inside-inner-col{
-overflow: hidden;
+.section-wild-card .kt-inside-inner-col {
+  overflow: hidden;
 }
 .splide__arrow,
 .slick-next,
@@ -1713,11 +1685,7 @@ overflow: hidden;
 .section-fitness-experts .kb-advanced-slider .kt-has-2-columns {
   margin-right: 0px;
 }
-@media screen and (max-width: 1536px) {
-  .calculator-slider .circle-range {
-    top: 24%;
-  }
-}
+
 @media only screen and (max-width: 1536px) and (min-width: 1025px) {
   .section-revolutionary-medications .title-section {
     font-size: 28px !important;
@@ -1769,7 +1737,7 @@ overflow: hidden;
     padding: 16px 32px;
   }
   .weight {
-    font-size: 90px;
+    font-size: 48px;
   }
 }
 /* faqs */
@@ -1896,10 +1864,10 @@ overflow: hidden;
   border-radius: 30px;
   overflow: hidden;
 }
-.product-smart-slider .n2-ss-slider-2{
+.product-smart-slider .n2-ss-slider-2 {
   border-radius: 30px !important;
 }
-.product-smart-slider .n2-thumbnail-dot img{
+.product-smart-slider .n2-thumbnail-dot img {
   object-fit: contain !important;
 }
 .medication .product-info-right {
@@ -1910,15 +1878,14 @@ overflow: hidden;
     order: 2;
   }
 }
-.citations-links a{
+.citations-links a {
   color: var(--wp--preset--color--theme-palette-5) !important;
 }
-.citations-links a:hover{
+.citations-links a:hover {
   color: var(--wp--preset--color--theme-palette-3) !important;
 }
-.citations-links ol{
+.citations-links ol {
   padding-left: 0px !important;
   padding-right: 0px !important;
   list-style: none;
 }
-
