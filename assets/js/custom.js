@@ -12,7 +12,8 @@ $(document).ready(function () {
     showTooltip: true,
     width: width,
     drag: "traceEvent",
-    create: "traceEvent"
+    create: "traceEvent",
+    change: "traceEvent",
   });
 
   // Check if the device is mobile
