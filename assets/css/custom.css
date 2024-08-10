@@ -1073,7 +1073,7 @@ header .site-branding a.brand img {
   .site-main-header-wrap .site-header-row-container-inner>.site-container{
     padding: 20px 12px 20px 12px !important;
   }
-  .main-navigation .primary-menu-container > ul li.menu-item > a, #main-header .header-button2{
+  .main-navigation .primary-menu-container > ul li.menu-item > a, #main-header .header-button2, #main-header .header-button{
     font-size: 20px !important;
   }
 }
