@@ -1907,4 +1907,39 @@ article .wp-post-image {
 }
 
 
+/* real stories ui */
 
+.section-real-stories .section-stories-slide .wp-block-kadence-videopopup{
+  border-radius: 24px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  overflow: hidden;
+}
+.section-real-stories .section-stories-slide .wp-block-kadence-videopopup img{
+  max-height: unset;
+}
+
+.section-real-stories .section-stories-slide .kb-svg-icon-wrap{
+  border: 2px solid #fff;
+  height: 70px !important;
+  width: 70px !important;
+  padding: 18px !important;
+  border-radius: 60px !important;
+}
+.section-real-stories .section-stories-slide .kb-svg-icon-wrap svg{
+  fill: #fff;
+}
+.section-real-stories .section-stories-slide .kadence-video-popup-wrap{
+  border-radius: unset !important;
+  border: unset !important;
+}
+
+.section-real-stories .mejs-controls{
+  display: none !important;
+}
+
+.section-real-stories .stories-card .video-section{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+}
