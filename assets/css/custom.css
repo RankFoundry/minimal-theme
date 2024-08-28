@@ -1059,10 +1059,6 @@ footer .wp-block-social-links li {
   align-items: center;
   gap: 14px;
 }
-header .site-branding a.brand img {
-  display: none;
-}
-
 .primary-breadcrumb {
   width: 100%;
   max-width: 1770px !important;
@@ -1942,4 +1938,34 @@ article .wp-post-image {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow: hidden;
+}
+
+.section-real-stories .section-stories-slide .plyr__video-wrapper{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  background-color: #d0d6ce;
+}
+
+.section-real-stories .section-stories-slide .plyr__controls__item{
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 16px;
+  margin: 0px auto;
+}
+.section-real-stories .section-stories-slide .plyr__controls__item:hover{
+  background-color: unset !important;
+  opacity: 0.8;
+}
+
+.section-real-stories .plyr__tooltip{
+  display: none;
+}
+
+.section-real-stories .section-stories-slide .plyr__video-wrapper{
+  position: relative;
+}
+
+.section-real-stories .section-stories-slide  .plyr__controls{
+  height: 100%;
+  background: unset;
 }
